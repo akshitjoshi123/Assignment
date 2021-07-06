@@ -1,11 +1,9 @@
 class RGP():
     def rgp():
-        print("1 : RGP : Residential General Purpose \n2 : BPL : Below Poverty Line")
-        print("Choose number : ")
+        print("1 : RGP : Residential General Purpose \n2 : BPL : Below Poverty Line\nChoose number : ")
         i = int(input())
         while i not in range(1,3):
-            print("Please select valid number!!!")
-            print("Choose number : ")
+            print("Please select valid number!!!\nChoose number : ")
             i = int(input())
         unit = int(input("Enter Total Unit : "))
 
@@ -24,24 +22,18 @@ class RGP():
                 p3 = 150 * (395/100)
                 p4 = p1 * (500/100)
                 p5 = p2 + p3 + p4
-            # print(p5)
             print("1 : For Single Phase\n2 : For Three Phase")
             phase = int(input("Enter Phase : "))
             while phase not in range(1,3):
-                print("Please select valid phase!!!")
-                print("Choose Phase : ")
+                print("Please select valid phase!!!\nChoose Phase : ")
                 phase = int(input())
             if phase == 1:
                 fixed_charge =  25
             elif phase == 2:
                 fixed_charge =  65
-            # else:
-            #     print("You not select valid Phase!")
-            #     exit()
             cate_1_result = p5 + fixed_charge 
             return(cate_1_result)
 
-        # print(fixed_charge)
         #BPL : Below Poverty Line
         if i == 2:
             if unit <= 50:

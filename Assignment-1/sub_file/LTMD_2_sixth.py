@@ -15,8 +15,7 @@ class LTMD_2:
             demand = demand * 300
         power_factor = int(input("Enter Power factor in percentage % : "))
         while power_factor not in range(1,101):
-                print("Invalid percentage!!")
-                print("Enter Power factor in percentage % : ")
+                print("Invalid percentage!!\Enter Power factor in percentage % : ")
                 power_factor = int(input())
         if power_factor <=100:
             if power_factor >=90 and power_factor <95:

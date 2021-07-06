@@ -12,8 +12,7 @@ class GPL:
         print("1 : For Single Phase\n2 : For Three Phase")
         phase = int(input("Enter Phase : "))
         while phase not in range(1,3):
-                print("Please select valid phase!!!")
-                print("Choose Phase : ")
+                print("Please select valid phase!!!\nChoose Phase : ")
                 phase = int(input())
         if phase == 1:
             fixed_charge =  30
