@@ -7,4 +7,4 @@ class base(ABC):
 
     @abstractmethod
     def run(self):
-        return 0
+        pass

@@ -10,12 +10,12 @@ while i not in range(1,4):
     i = int(input())
 
 if i == 1:
-    a = sub_fibonaaci()
-    print(a.run())
+    fibonaaci_obj = sub_fibonaaci()
+    print(fibonaaci_obj.run())
 elif i == 2:
-    b = sub_prime_number()
-    print(b.run())
+    prime_obj = sub_prime_number()
+    print(prime_obj.run())
 elif i == 3:
-    c = sub_armstrong()
-    print(c.run())
+    armstrong_obj = sub_armstrong()
+    print(armstrong_obj.run())
 

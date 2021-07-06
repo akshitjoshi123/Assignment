@@ -1,7 +1,6 @@
 from base import base
 
 class sub_fibonaaci(base):
-
     def run(self):
         a = 0
         b = 1
