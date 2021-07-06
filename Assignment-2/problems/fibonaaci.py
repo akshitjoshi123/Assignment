@@ -1,15 +1,6 @@
-import sys
-from abc import ABC, abstractmethod
+from base import base
 
-class fibonaaci(ABC):
-    @abstractmethod
-    def run(self):
-        pass
-
-
-class sub_fibonaaci(fibonaaci):
-    def __init__(self):
-        self.number = int(input("Enter fibonaaci Number: "))
+class sub_fibonaaci(base):
 
     def run(self):
         a = 0
@@ -26,7 +17,3 @@ class sub_fibonaaci(fibonaaci):
                 a = b
                 b = c
             return b
-
-# obj1 = sub_fibonaaci()
-
-# print(obj1.run())

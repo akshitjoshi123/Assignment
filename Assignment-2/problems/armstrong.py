@@ -1,15 +1,6 @@
-import sys
-from abc import ABC, abstractmethod
+from base import base
 
-class armstrong(ABC):
-    @abstractmethod
-    def run(self):
-        pass
-
-
-class sub_armstrong(armstrong):
-    def __init__(self):
-       self.number = int(input("Enter Armdtrong Number : "))
+class sub_armstrong(base):
 
     def run(self):
         sum = 0 
@@ -22,7 +13,3 @@ class sub_armstrong(armstrong):
             return "Armstrong number"
         else: 
             return "Not an Armstrong number"
-
-
-# obj3 = sub_armstrong()
-# print(obj3.run())
