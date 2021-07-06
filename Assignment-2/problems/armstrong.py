@@ -1,6 +1,6 @@
 from base import base
 
-class sub_armstrong(base):
+class armstrong(base):
     def run(self):
         sum = 0 
         n1 = self.number 

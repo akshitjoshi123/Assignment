@@ -1,15 +1,13 @@
 from base import base
-
-class sub_fibonaaci(base):
+ 
+class fibonaaci(base):
     def run(self):
         a = 0
         b = 1
         if self.number < 0:
             return "Incorrect input"
-        elif self.number == 0:
-            return a
-        elif self.number == 1:
-            return b
+        elif self.number in (0,1):
+            return self.number
         else:
             for i in range(2,self.number+1):
                 c = a + b

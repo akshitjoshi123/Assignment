@@ -1,6 +1,6 @@
 from base import base
 
-class sub_prime_number(base):  
+class primeNumber(base):  
     def run(self):
         if self.number > 1:
             for i in range(2, int(self.number/2)+1):

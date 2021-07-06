@@ -1,6 +1,6 @@
-from problems.fibonaaci import sub_fibonaaci
-from problems.prime_number import sub_prime_number
-from problems.armstrong import sub_armstrong
+from problems.fibonaaci import fibonaaci
+from problems.prime_number import primeNumber
+from problems.armstrong import armstrong
 
 
 try:
@@ -12,14 +12,14 @@ try:
         i = int(input())
 
     if i == 1:
-        fibonaaci_obj = sub_fibonaaci()
-        print(fibonaaci_obj.run())
+        fibonaaciObj = fibonaaci()
+        print(fibonaaciObj.run())
     elif i == 2:
-        prime_obj = sub_prime_number()
-        print(prime_obj.run())
+        primeObj = primeNumber()
+        print(primeObj.run())
     elif i == 3:
-        armstrong_obj = sub_armstrong()
-        print(armstrong_obj.run())
+        armstrongObj = armstrong()
+        print(armstrongObj.run())
 
 except ValueError as e:
         print("Opps!!! You select a String!")
